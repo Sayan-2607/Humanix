@@ -1,0 +1,12 @@
+# Render Blueprint: https://render.com/docs/blueprint-spec
+services:
+  - type: web
+    name: humanix
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: RATE_LIMIT_RPM
+        value: "120"
+      - key: CROSSREF_MAILTO
+        sync: false

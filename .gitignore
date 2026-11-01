@@ -1,0 +1,5 @@
+bin/
+*.zip
+.env
+.vercel
+coverage.out
